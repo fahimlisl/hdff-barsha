@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+/* Neon flicker animation for Barsha */
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+    text-shadow:
+      0 0 4px #ff5fa2,
+      0 0 10px #ff5fa2,
+      0 0 20px #ff5fa2,
+      0 0 40px #ff5fa2,
+      0 0 80px #ff5fa2;
+  }
+  20%, 24%, 55% {
+    opacity: 0.5;
+    text-shadow: none;
+  }
+}
+
+.flicker-glow {
+  animation: flicker 3s infinite;
+}
+
+
+/* Smooth gradient animation for text */
+@keyframes gradient-x {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 5s ease infinite;
+}
+
+/* Optional flicker-glow from earlier */
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+    text-shadow:
+      0 0 5px #ff5fa2,
+      0 0 15px #ff5fa2,
+      0 0 30px #ff5fa2;
+  }
+  20%, 24%, 55% {
+    opacity: 0.5;
+    text-shadow: none;
+  }
+}
+
+.flicker-glow {
+  animation: flicker 3s infinite;
+}
