@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Neon flicker animation for Barsha */
+
 @keyframes flicker {
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
     opacity: 1;
@@ -22,7 +22,7 @@
 }
 
 
-/* Smooth gradient animation for text */
+
 @keyframes gradient-x {
   0%, 100% {
     background-position: 0% 50%;
@@ -37,7 +37,7 @@
   animation: gradient-x 5s ease infinite;
 }
 
-/* Optional flicker-glow from earlier */
+
 @keyframes flicker {
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
     opacity: 1;
